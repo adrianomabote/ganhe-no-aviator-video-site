@@ -37,7 +37,7 @@ export default function VideoFrame() {
         // Começa a escrever novamente
         isDeleting = false;
       }
-    }, 80);
+    }, 150);
     
     return () => clearInterval(interval);
   }, []);
