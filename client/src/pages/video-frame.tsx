@@ -43,24 +43,23 @@ export default function VideoFrame() {
         </div>
 
         {/* Text and Button Section */}
-        <div className="mt-10 text-center max-w-sm">
-          <p className="mb-8" style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#e0e0e0', lineHeight: '1.6', opacity: 0.85 }}>
+        <div className="mt-4 text-center max-w-sm">
+          <p className="mb-6" style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#e0e0e0', lineHeight: '1.6', opacity: 0.85 }}>
             Veja no vídeo como funciona o sistema que está mudando a vida de muitos jogadores. Aprenda a ganhar no Aviator de maneira inteligente e segura!
           </p>
           <button
             data-testid="button-get-system"
-            className="px-6 py-2 font-semibold"
+            className="px-12 py-4 font-bold text-lg"
             style={{
               background: '#ff0000',
               color: '#fff',
               border: 'none',
               borderRadius: '6px',
               cursor: 'pointer',
-              fontSize: '14px',
               animation: 'heartbeat 1.3s ease-in-out infinite'
             }}
           >
-            Obter o sistema
+            OBTER O SISTEMA AGORA
           </button>
         </div>
       </div>
