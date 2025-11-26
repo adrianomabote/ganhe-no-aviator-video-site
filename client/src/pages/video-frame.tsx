@@ -44,8 +44,8 @@ export default function VideoFrame() {
 
         {/* Text and Button Section */}
         <div className="mt-10 text-center max-w-sm">
-          <p className="text-white text-base mb-8" style={{ fontFamily: 'Arial, sans-serif', lineHeight: '1.8', opacity: 0.9 }}>
-            Veja no vídeo como funciona o sistema que está mudando a vida de muitos. Aprenda a ganhar no Aviator de uma forma inteligente e segura.
+          <p className="mb-8" style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#e0e0e0', lineHeight: '1.6', opacity: 0.85 }}>
+            Veja no vídeo como funciona o sistema que está mudando a vida de muitos jogadores. Aprenda a ganhar no Aviator de maneira inteligente e segura!
           </p>
           <button
             data-testid="button-get-system"
