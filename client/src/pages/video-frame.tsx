@@ -75,9 +75,8 @@ export default function VideoFrame() {
             src="/video.mp4"
             style={{ width: '100%', height: '100%', objectFit: 'contain' }}
             autoPlay
-            loop
-            muted
             playsInline
+            controls
           ></video>
         </div>
 
