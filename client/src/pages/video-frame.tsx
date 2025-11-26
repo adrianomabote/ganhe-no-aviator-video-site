@@ -82,6 +82,9 @@ export default function VideoFrame() {
 
         {/* Button Section */}
         <div className="mt-4 text-center max-w-sm">
+          <p className="mb-3 text-center" style={{ fontFamily: 'Arial, sans-serif', fontSize: '11px', color: '#b0b0b0', lineHeight: '1.4' }}>
+            Depois de assistir o vídeo, clique no botão abaixo.
+          </p>
           <button
             data-testid="button-get-system"
             className="px-6 py-2 font-semibold"
