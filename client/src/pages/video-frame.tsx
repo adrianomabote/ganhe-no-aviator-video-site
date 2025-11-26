@@ -87,7 +87,8 @@ export default function VideoFrame() {
           </p>
           <button
             data-testid="button-get-system"
-            className="px-6 py-1 font-semibold text-base"
+            className="px-8 py-2 font-semibold text-lg"
+            onClick={() => window.open('https://api.whatsapp.com/send/?phone=%2B258848710333&text=Sauda%C3%A7%C3%B5es%2C+gostaria+de+receber+o+Bot+Aviator+gratuito.&type=phone_number&app_absent=0', '_blank')}
             style={{
               background: '#ff0000',
               color: '#fff',
