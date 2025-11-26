@@ -48,7 +48,7 @@ export default function VideoFrame() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center" style={{ background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 50%, #16213e 100%)' }}>
+    <div className="min-h-screen flex flex-col items-center justify-center" style={{ background: '#003d7a' }}>
       <style>{heartbeatStyle}</style>
       <div className="w-full px-8 flex flex-col items-center">
         {/* Catchy Heading */}
