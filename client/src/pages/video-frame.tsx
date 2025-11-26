@@ -1,11 +1,13 @@
 export default function VideoFrame() {
   return (
-    <div className="min-h-screen flex items-center justify-center" style={{ background: 'linear-gradient(180deg, #c4d97a 0%, #9ca85c 50%, #7a8c45 100%)' }}>
-      <div className="w-full max-w-3xl px-8">
+    <div className="min-h-screen flex flex-col items-center justify-center" style={{ background: 'linear-gradient(180deg, #c4d97a 0%, #9ca85c 50%, #7a8c45 100%)' }}>
+      <div className="w-full px-8 flex flex-col items-center">
         {/* Video container */}
         <div style={{
           position: 'relative',
-          aspectRatio: '16/9',
+          aspectRatio: '9/16',
+          width: '100%',
+          maxWidth: '360px',
           borderRadius: '12px',
           overflow: 'hidden',
           background: '#000',
