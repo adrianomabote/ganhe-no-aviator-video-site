@@ -10,9 +10,9 @@ const heartbeatStyle = `
 
 export default function VideoFrame() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center" style={{ background: 'linear-gradient(180deg, #c4d97a 0%, #9ca85c 50%, #7a8c45 100%)' }}>
+    <div className="min-h-screen flex flex-col items-center justify-center" style={{ background: '#000000' }}>
       <style>{heartbeatStyle}</style>
-      <div className="w-full px-8 flex flex-col items-center">
+      <div className="w-full px-8 flex flex-col items-center pt-20">
         {/* Catchy Heading */}
         <h1 className="text-white text-3xl md:text-4xl font-bold mb-1 text-center" style={{ fontFamily: 'Georgia, serif', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
           Ganhe no Aviator
