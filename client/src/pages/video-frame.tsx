@@ -2,14 +2,13 @@ export default function VideoFrame() {
   return (
     <div className="min-h-screen flex items-center justify-center" style={{ background: 'linear-gradient(180deg, #c4d97a 0%, #9ca85c 50%, #7a8c45 100%)' }}>
       <div className="w-full max-w-3xl px-8">
-        {/* Video container with right and bottom border */}
+        {/* Video container */}
         <div style={{
           position: 'relative',
           aspectRatio: '16/9',
           borderRadius: '28px',
           overflow: 'hidden',
           background: '#000',
-          boxShadow: '14px 14px 0 0 #9ca85c',
         }}>
           <iframe
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
