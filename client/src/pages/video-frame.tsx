@@ -14,10 +14,10 @@ export default function VideoFrame() {
       <style>{heartbeatStyle}</style>
       <div className="w-full px-8 flex flex-col items-center">
         {/* Catchy Heading */}
-        <h1 className="text-white text-3xl md:text-4xl font-bold mb-2 text-center" style={{ fontFamily: 'Georgia, serif', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
+        <h1 className="text-white text-3xl md:text-4xl font-bold mb-1 text-center" style={{ fontFamily: 'Georgia, serif', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
           Ganhe no Aviator
         </h1>
-        <p className="text-white text-lg mb-8 text-center" style={{ fontFamily: 'Arial, sans-serif', opacity: 0.95 }}>
+        <p className="text-white text-lg mb-2 text-center" style={{ fontFamily: 'Arial, sans-serif', opacity: 0.95 }}>
           Com o sistema inteligente que funciona
         </p>
 
@@ -49,7 +49,7 @@ export default function VideoFrame() {
           </p>
           <button
             data-testid="button-get-system"
-            className="px-12 py-4 font-bold text-lg"
+            className="px-6 py-2 font-semibold"
             style={{
               background: '#ff0000',
               color: '#fff',
