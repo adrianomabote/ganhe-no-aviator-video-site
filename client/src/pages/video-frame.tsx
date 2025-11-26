@@ -17,17 +17,20 @@ export default function VideoFrame() {
         {/* Video Frame with Glowing Border Effect */}
         <div className="relative group">
           {/* Outer glow layer */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/50 via-blue-500/50 to-teal-500/50 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+          <div className="absolute -inset-1 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
+               style={{
+                 background: 'linear-gradient(135deg, rgba(156, 168, 92, 0.5) 0%, rgba(139, 156, 73, 0.5) 100%)'
+               }}></div>
           
           {/* Inner shadow/depth effect */}
           <div className="relative rounded-3xl overflow-hidden border-4 border-gradient shadow-2xl" 
                style={{
-                 backgroundImage: 'linear-gradient(135deg, rgba(34, 211, 238, 0.3) 0%, rgba(14, 165, 233, 0.2) 50%, rgba(45, 212, 191, 0.3) 100%)',
+                 backgroundImage: 'linear-gradient(135deg, rgba(156, 168, 92, 0.3) 0%, rgba(139, 156, 73, 0.2) 50%, rgba(128, 146, 62, 0.3) 100%)',
                  border: '4px solid transparent',
                  backgroundClip: 'padding-box',
                  boxShadow: `
-                   0 0 30px rgba(34, 211, 238, 0.4),
-                   0 0 60px rgba(14, 165, 233, 0.2),
+                   0 0 30px rgba(156, 168, 92, 0.4),
+                   0 0 60px rgba(139, 156, 73, 0.2),
                    inset 0 1px 0 rgba(255, 255, 255, 0.1),
                    inset 0 -1px 0 rgba(0, 0, 0, 0.5)
                  `
@@ -36,7 +39,7 @@ export default function VideoFrame() {
             <div 
               className="absolute inset-0 rounded-3xl -z-10"
               style={{
-                background: 'linear-gradient(135deg, #06b6d4 0%, #0ea5e9 50%, #2dd4bf 100%)',
+                background: 'linear-gradient(135deg, #9ca85c 0%, #8b9c49 50%, #80923e 100%)',
               }}
             ></div>
 
@@ -64,14 +67,24 @@ export default function VideoFrame() {
               value={inputUrl}
               onChange={(e) => setInputUrl(e.target.value)}
               placeholder="Paste YouTube embed URL here..."
-              className="flex-1 px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/30 transition-all"
+              className="flex-1 px-4 py-3 rounded-lg bg-slate-800 border text-white placeholder-slate-400 focus:outline-none transition-all"
+              style={{
+                borderColor: inputUrl ? '#9ca85c' : '#334155',
+                boxShadow: inputUrl ? '0 0 15px rgba(156, 168, 92, 0.3)' : 'none'
+              }}
               data-testid="input-video-url"
               onKeyPress={(e) => e.key === 'Enter' && handleUpdateVideo()}
             />
             <button
-              onClick={handleUpdateVideo}
-              className="px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-cyan-500/50"
+              style={{
+                background: 'linear-gradient(135deg, #9ca85c 0%, #8b9c49 100%)',
+                boxShadow: '0 0 20px rgba(156, 168, 92, 0.3)'
+              }}
+              className="px-6 py-3 rounded-lg text-white font-semibold transition-all duration-200 hover:shadow-lg hover:scale-105"
               data-testid="button-update-video"
+              onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 0 30px rgba(156, 168, 92, 0.6)'}
+              onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 0 20px rgba(156, 168, 92, 0.3)'}
+              onClick={handleUpdateVideo}
             >
               Load
             </button>
