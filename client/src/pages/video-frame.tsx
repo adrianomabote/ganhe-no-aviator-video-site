@@ -14,7 +14,7 @@ export default function VideoFrame() {
       <style>{heartbeatStyle}</style>
       <div className="w-full px-8 flex flex-col items-center">
         {/* Catchy Heading */}
-        <h1 className="text-white text-3xl md:text-4xl font-bold mb-1 text-center" style={{ fontFamily: 'Georgia, serif', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
+        <h1 className="text-white text-3xl md:text-4xl font-bold mb-1 text-center" style={{ fontFamily: 'Georgia, serif', color: '#ffffff', textShadow: '0 0 20px rgba(255,255,255,0.8), 2px 2px 4px rgba(0,0,0,0.5)' }}>
           Ganhe no Aviator
         </h1>
         <p className="text-white text-lg mb-2 text-center" style={{ fontFamily: 'Arial, sans-serif', opacity: 0.95 }}>
