@@ -93,8 +93,7 @@ export default function VideoFrame() {
               color: '#fff',
               border: 'none',
               borderRadius: '6px',
-              cursor: 'pointer',
-              animation: 'heartbeat 1.3s ease-in-out infinite'
+              cursor: 'pointer'
             }}
           >
             OBTER O SISTEMA AGORA
