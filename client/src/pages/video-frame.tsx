@@ -9,7 +9,7 @@ export default function VideoFrame() {
             className="relative rounded-3xl overflow-hidden"
             style={{
               aspectRatio: '16/9',
-              background: 'linear-gradient(90deg, #9ca85c 0%, #9ca85c 50%, #000000 50%, #000000 100%)',
+              background: '#9ca85c',
               padding: '4px',
             }}
           >
