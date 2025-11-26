@@ -27,10 +27,10 @@ export default function VideoFrame() {
           aspectRatio: '9/16',
           width: '100%',
           maxWidth: '300px',
-          borderRadius: '24px',
+          borderRadius: '12px',
           overflow: 'hidden',
           background: '#000',
-          border: '1px solid #1a1a1a',
+          border: '2px solid #1a1a1a',
           boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
         }}>
           <iframe
