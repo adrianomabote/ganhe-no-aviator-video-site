@@ -8,6 +8,14 @@ const heartbeatStyle = `
     42% { transform: scale(1.1); }
     56% { transform: scale(1); }
   }
+  
+  video::-webkit-media-controls-download-button {
+    display: none;
+  }
+  
+  video::-moz-media-controls-download-button {
+    display: none;
+  }
 `;
 
 export default function VideoFrame() {
