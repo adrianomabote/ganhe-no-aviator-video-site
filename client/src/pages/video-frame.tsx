@@ -71,13 +71,13 @@ export default function VideoFrame() {
           border: '2px solid #1a1a1a',
           boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
         }}>
-          <iframe
-            src="https://www.youtube.com/embed/VgsrvceLFiw"
-            title="Video Frame"
-            className="w-full h-full border-0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <video
+            src="/video.mp4"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            controls
+            autoPlay
+            playsInline
+          ></video>
         </div>
 
         {/* Button Section */}
