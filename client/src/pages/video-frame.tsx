@@ -87,13 +87,14 @@ export default function VideoFrame() {
           </p>
           <button
             data-testid="button-get-system"
-            className="px-6 py-2 font-semibold"
+            className="px-8 py-3 font-semibold text-lg"
             style={{
               background: '#ff0000',
               color: '#fff',
               border: 'none',
               borderRadius: '6px',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              animation: 'heartbeat 1.3s ease-in-out infinite'
             }}
           >
             OBTER O SISTEMA AGORA
