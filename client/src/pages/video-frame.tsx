@@ -52,11 +52,11 @@ export default function VideoFrame() {
       <style>{heartbeatStyle}</style>
       <div className="w-full px-8 flex flex-col items-center">
         {/* Catchy Heading */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-1 text-center whitespace-nowrap" style={{ fontFamily: 'Georgia, serif', color: '#ffffff', fontWeight: '900', minHeight: '60px', letterSpacing: '1px' }}>
+        <h1 className="text-4xl md:text-5xl font-bold mb-2 text-center whitespace-nowrap" style={{ fontFamily: 'Georgia, serif', color: '#ffffff', fontWeight: '900', minHeight: '60px', letterSpacing: '1px' }}>
           {displayedText}
         </h1>
-        <p className="text-lg mb-4 text-center" style={{ fontFamily: 'Arial, sans-serif', color: '#c41e3a', fontWeight: '600' }}>
-          Com o sistema inteligente que funciona
+        <p className="mb-4 text-center" style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#e0e0e0', lineHeight: '1.6', opacity: 0.85 }}>
+          Veja no vídeo como funciona o sistema que está mudando a vida de muitos jogadores. Aprenda a ganhar no Aviator de maneira inteligente e segura!
         </p>
 
         {/* Video container */}
@@ -80,11 +80,8 @@ export default function VideoFrame() {
           ></iframe>
         </div>
 
-        {/* Text and Button Section */}
-        <div className="mt-3 text-center max-w-sm">
-          <p className="mb-3" style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#e0e0e0', lineHeight: '1.6', opacity: 0.85 }}>
-            Veja no vídeo como funciona o sistema que está mudando a vida de muitos jogadores. Aprenda a ganhar no Aviator de maneira inteligente e segura!
-          </p>
+        {/* Button Section */}
+        <div className="mt-4 text-center max-w-sm">
           <button
             data-testid="button-get-system"
             className="px-6 py-2 font-semibold"
