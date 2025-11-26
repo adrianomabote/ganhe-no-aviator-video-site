@@ -16,26 +16,31 @@ export default function VideoFrame() {
 
   useEffect(() => {
     let index = 0;
-    let isDeleting = false;
-    let hasWritten = false;
+    let phase = 'writing'; // 'writing', 'paused', 'deleting'
+    let pauseCounter = 0;
 
     const interval = setInterval(() => {
-      if (!isDeleting) {
+      if (phase === 'writing') {
         // Escrevendo letra por letra
         if (index < fullText.length) {
           setDisplayedText(fullText.slice(0, index + 1));
           index++;
-          hasWritten = true;
-        } else if (hasWritten) {
-          // Terminou de escrever, apaga tudo imediatamente
-          setDisplayedText('');
-          isDeleting = true;
-          index = 0;
-          hasWritten = false;
+        } else {
+          // Terminou de escrever, vai para pausa
+          phase = 'paused';
+          pauseCounter = 0;
         }
-      } else {
-        // Começa a escrever novamente
-        isDeleting = false;
+      } else if (phase === 'paused') {
+        // Pausando por 1.5 segundos (6 ciclos de 250ms)
+        pauseCounter++;
+        if (pauseCounter >= 6) {
+          // Terminou a pausa, vai apagar
+          phase = 'deleting';
+          setDisplayedText('');
+          index = 0;
+          phase = 'writing';
+          pauseCounter = 0;
+        }
       }
     }, 250);
     
