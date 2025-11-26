@@ -14,10 +14,10 @@ export default function VideoFrame() {
       <style>{heartbeatStyle}</style>
       <div className="w-full px-8 flex flex-col items-center">
         {/* Catchy Heading */}
-        <h1 className="text-white text-3xl md:text-4xl font-bold mb-1 text-center" style={{ fontFamily: 'Georgia, serif', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
+        <h1 className="text-white text-2xl font-bold mb-0 text-center" style={{ fontFamily: 'Georgia, serif', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
           Ganhe no Aviator
         </h1>
-        <p className="text-white text-lg mb-2 text-center" style={{ fontFamily: 'Arial, sans-serif', opacity: 0.95 }}>
+        <p className="text-white text-sm mb-1 text-center" style={{ fontFamily: 'Arial, sans-serif', opacity: 0.95 }}>
           Com o sistema inteligente que funciona
         </p>
 
@@ -26,7 +26,8 @@ export default function VideoFrame() {
           position: 'relative',
           aspectRatio: '9/16',
           width: '100%',
-          maxWidth: '300px',
+          maxWidth: '250px',
+          marginTop: '8px',
           borderRadius: '12px',
           overflow: 'hidden',
           background: '#000',
@@ -43,8 +44,8 @@ export default function VideoFrame() {
         </div>
 
         {/* Text and Button Section */}
-        <div className="mt-4 text-center max-w-sm">
-          <p className="mb-6" style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#e0e0e0', lineHeight: '1.6', opacity: 0.85 }}>
+        <div className="mt-2 text-center max-w-xs">
+          <p className="mb-3" style={{ fontFamily: 'Arial, sans-serif', fontSize: '11px', color: '#e0e0e0', lineHeight: '1.5', opacity: 0.85 }}>
             Veja no vídeo como funciona o sistema que está mudando a vida de muitos jogadores. Aprenda a ganhar no Aviator de maneira inteligente e segura!
           </p>
           <button
