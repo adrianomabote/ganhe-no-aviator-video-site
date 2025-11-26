@@ -9,7 +9,7 @@ export default function VideoFrame() {
           borderRadius: '12px',
           overflow: 'hidden',
           background: '#000',
-          border: '4px solid #556f2f',
+          border: '4px solid #3d4f1f',
         }}>
           <iframe
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
