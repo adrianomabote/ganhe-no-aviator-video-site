@@ -18,24 +18,24 @@ export default function VideoFrame() {
           {/* Right border */}
           <div style={{
             position: 'absolute',
-            right: -12px,
-            top: 0,
+            right: '-12px',
+            top: '0px',
             width: '12px',
             height: '100%',
             background: '#9ca85c',
             borderRadius: '0 24px 24px 0',
-          }}></div>
+          } as React.CSSProperties}></div>
           
           {/* Bottom border */}
           <div style={{
             position: 'absolute',
-            bottom: -12px,
-            left: 0,
+            bottom: '-12px',
+            left: '0px',
             width: '100%',
             height: '12px',
             background: '#9ca85c',
             borderRadius: '0 0 24px 24px',
-          }}></div>
+          } as React.CSSProperties}></div>
         </div>
       </div>
     </div>
