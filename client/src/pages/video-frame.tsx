@@ -19,6 +19,26 @@ export default function VideoFrame() {
             allowFullScreen
           ></iframe>
         </div>
+
+        {/* Text and Button Section */}
+        <div className="mt-8 text-center">
+          <p className="text-white text-lg mb-6" style={{ fontFamily: 'Arial, sans-serif', lineHeight: '1.6' }}>
+            O vídeo acima e veja como funciona o sistema que esta mudar vida de muitos jogar a ganhar no Aviator duma forma inteligente....
+          </p>
+          <button
+            data-testid="button-get-system"
+            className="px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105"
+            style={{
+              background: '#3d4f1f',
+              color: '#fff',
+              border: '2px solid #3d4f1f',
+              cursor: 'pointer',
+              fontSize: '16px'
+            }}
+          >
+            Obter o sistema
+          </button>
+        </div>
       </div>
     </div>
   );
