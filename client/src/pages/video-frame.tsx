@@ -30,7 +30,7 @@ export default function VideoFrame() {
           borderRadius: '24px',
           overflow: 'hidden',
           background: '#000',
-          border: '6px solid #7ba7c4',
+          border: '4px solid #7ba7c4',
           boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
         }}>
           <iframe
