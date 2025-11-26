@@ -52,10 +52,10 @@ export default function VideoFrame() {
       <style>{heartbeatStyle}</style>
       <div className="w-full px-8 flex flex-col items-center">
         {/* Catchy Heading */}
-        <h1 className="text-3xl md:text-4xl font-bold mb-2 text-center whitespace-nowrap" style={{ fontFamily: 'Georgia, serif', color: '#ffffff', fontWeight: '900', minHeight: '50px' }}>
+        <h1 className="text-4xl md:text-5xl font-bold mb-1 text-center whitespace-nowrap" style={{ fontFamily: 'Georgia, serif', color: '#ffffff', fontWeight: '900', minHeight: '60px', letterSpacing: '1px' }}>
           {displayedText}
         </h1>
-        <p className="text-white text-lg mb-4 text-center" style={{ fontFamily: 'Arial, sans-serif', opacity: 0.95 }}>
+        <p className="text-lg mb-4 text-center" style={{ fontFamily: 'Arial, sans-serif', color: '#c41e3a', fontWeight: '600' }}>
           Com o sistema inteligente que funciona
         </p>
 
