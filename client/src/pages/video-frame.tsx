@@ -87,7 +87,7 @@ export default function VideoFrame() {
           </p>
           <button
             data-testid="button-get-system"
-            className="px-8 py-3 font-semibold text-lg"
+            className="px-6 py-2 font-semibold text-base"
             style={{
               background: '#ff0000',
               color: '#fff',
