@@ -6,7 +6,7 @@ export default function VideoFrame() {
         <div style={{
           position: 'relative',
           aspectRatio: '16/9',
-          borderRadius: '28px',
+          borderRadius: '12px',
           overflow: 'hidden',
           background: '#000',
           border: '4px solid #9ca85c',
