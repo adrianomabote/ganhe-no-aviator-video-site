@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 const heartbeatStyle = `
   @keyframes heartbeat {
     0%, 100% { transform: scale(1); }
@@ -9,13 +11,30 @@ const heartbeatStyle = `
 `;
 
 export default function VideoFrame() {
+  const [displayedText, setDisplayedText] = useState('');
+  const fullText = 'Ganhe no Aviator';
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      if (index < fullText.length) {
+        setDisplayedText(fullText.slice(0, index + 1));
+        index++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 100);
+    
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center" style={{ background: '#1a1a1a' }}>
       <style>{heartbeatStyle}</style>
       <div className="w-full px-8 flex flex-col items-center">
         {/* Catchy Heading */}
-        <h1 className="text-3xl md:text-4xl font-bold mb-2 text-center whitespace-nowrap" style={{ fontFamily: 'Georgia, serif', color: '#ffffff', fontWeight: '900' }}>
-          Ganhe no Aviator
+        <h1 className="text-3xl md:text-4xl font-bold mb-2 text-center whitespace-nowrap" style={{ fontFamily: 'Georgia, serif', color: '#ffffff', fontWeight: '900', minHeight: '50px' }}>
+          {displayedText}
         </h1>
         <p className="text-white text-lg mb-4 text-center" style={{ fontFamily: 'Arial, sans-serif', opacity: 0.95 }}>
           Com o sistema inteligente que funciona
