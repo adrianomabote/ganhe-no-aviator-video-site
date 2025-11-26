@@ -16,12 +16,27 @@ export default function VideoFrame() {
 
   useEffect(() => {
     let index = 0;
+    let isDeleting = false;
+
     const interval = setInterval(() => {
-      if (index < fullText.length) {
-        setDisplayedText(fullText.slice(0, index + 1));
-        index++;
+      if (!isDeleting) {
+        // Escrevendo
+        if (index < fullText.length) {
+          setDisplayedText(fullText.slice(0, index + 1));
+          index++;
+        } else {
+          // Chegou ao final, começa a apagar
+          isDeleting = true;
+        }
       } else {
-        clearInterval(interval);
+        // Apagando
+        if (index > 0) {
+          index--;
+          setDisplayedText(fullText.slice(0, index));
+        } else {
+          // Terminou de apagar, volta a escrever
+          isDeleting = false;
+        }
       }
     }, 100);
     
