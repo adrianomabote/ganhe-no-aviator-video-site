@@ -15,20 +15,29 @@ export default function VideoFrame() {
   const fullText = 'Ganhe no Aviator';
 
   useEffect(() => {
-    let isVisible = true;
+    let index = 0;
+    let isDeleting = false;
+    let hasWritten = false;
 
     const interval = setInterval(() => {
-      if (isVisible) {
-        setDisplayedText(fullText);
-        isVisible = false;
+      if (!isDeleting) {
+        // Escrevendo letra por letra
+        if (index < fullText.length) {
+          setDisplayedText(fullText.slice(0, index + 1));
+          index++;
+          hasWritten = true;
+        } else if (hasWritten) {
+          // Terminou de escrever, aguarda e depois apaga tudo
+          isDeleting = true;
+        }
       } else {
+        // Apagando tudo de uma vez
         setDisplayedText('');
-        isVisible = true;
+        isDeleting = false;
+        index = 0;
+        hasWritten = false;
       }
-    }, 1500);
-    
-    // Mostra o texto na primeira vez
-    setDisplayedText(fullText);
+    }, 100);
     
     return () => clearInterval(interval);
   }, []);
