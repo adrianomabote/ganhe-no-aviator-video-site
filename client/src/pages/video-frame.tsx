@@ -52,7 +52,7 @@ export default function VideoFrame() {
       <style>{heartbeatStyle}</style>
       <div className="w-full px-8 flex flex-col items-center">
         {/* Catchy Heading */}
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 text-center whitespace-nowrap" style={{ fontFamily: 'Georgia, serif', color: '#ffffff', fontWeight: '900', minHeight: '80px', letterSpacing: '2px', textShadow: '0 4px 12px rgba(0, 0, 0, 0.5)' }}>
+        <h1 className="text-4xl md:text-5xl font-bold mb-2 text-center whitespace-nowrap" style={{ fontFamily: 'Georgia, serif', color: '#ffffff', fontWeight: '900', minHeight: '60px', letterSpacing: '1px', textShadow: '0 4px 12px rgba(0, 0, 0, 0.5)' }}>
           {displayedText}
         </h1>
         <p className="mb-4 text-center" style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#e0e0e0', lineHeight: '1.6', opacity: 0.85 }}>
