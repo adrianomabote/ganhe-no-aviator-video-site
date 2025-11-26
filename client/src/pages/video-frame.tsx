@@ -1,6 +1,17 @@
+const heartbeatStyle = `
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    14% { transform: scale(1.1); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.1); }
+    56% { transform: scale(1); }
+  }
+`;
+
 export default function VideoFrame() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center" style={{ background: 'linear-gradient(180deg, #c4d97a 0%, #9ca85c 50%, #7a8c45 100%)' }}>
+      <style>{heartbeatStyle}</style>
       <div className="w-full px-8 flex flex-col items-center">
         {/* Catchy Heading */}
         <h1 className="text-white text-3xl md:text-4xl font-bold mb-2 text-center" style={{ fontFamily: 'Georgia, serif', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
@@ -38,24 +49,15 @@ export default function VideoFrame() {
           </p>
           <button
             data-testid="button-get-system"
-            className="px-10 py-4 font-bold text-lg transition-all duration-300"
+            className="px-6 py-2 font-semibold"
             style={{
-              background: 'linear-gradient(135deg, #b0c860 0%, #9ca85c 100%)',
+              background: '#ff0000',
               color: '#fff',
               border: 'none',
-              borderRadius: '8px',
+              borderRadius: '6px',
               cursor: 'pointer',
-              boxShadow: '0 6px 20px rgba(61, 79, 31, 0.4)',
-              transform: 'translateY(0)',
-              letterSpacing: '0.5px'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-2px)';
-              e.currentTarget.style.boxShadow = '0 8px 25px rgba(61, 79, 31, 0.5)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 6px 20px rgba(61, 79, 31, 0.4)';
+              fontSize: '14px',
+              animation: 'heartbeat 1.3s ease-in-out infinite'
             }}
           >
             Obter o sistema
