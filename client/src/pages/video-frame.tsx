@@ -10,7 +10,7 @@ const heartbeatStyle = `
 
 export default function VideoFrame() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center" style={{ background: '#000000' }}>
+    <div className="min-h-screen flex flex-col items-center justify-center" style={{ background: '#0a0a0a' }}>
       <style>{heartbeatStyle}</style>
       <div className="w-full px-8 flex flex-col items-center">
         {/* Catchy Heading */}
@@ -30,7 +30,7 @@ export default function VideoFrame() {
           borderRadius: '24px',
           overflow: 'hidden',
           background: '#000',
-          border: '4px solid #ff0000',
+          border: '1px solid #1a1a1a',
           boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
         }}>
           <iframe
