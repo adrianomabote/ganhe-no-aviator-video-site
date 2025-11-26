@@ -1,6 +1,6 @@
 export default function VideoFrame() {
   return (
-    <div className="min-h-screen flex items-center justify-center" style={{ background: 'linear-gradient(180deg, #3d4f1f 0%, #3d4f1f 50%, #3d4f1f 100%)' }}>
+    <div className="min-h-screen flex items-center justify-center" style={{ background: 'linear-gradient(180deg, #c4d97a 0%, #9ca85c 50%, #7a8c45 100%)' }}>
       <div className="w-full max-w-3xl px-8">
         {/* Video container */}
         <div style={{
