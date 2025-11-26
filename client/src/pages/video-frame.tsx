@@ -27,17 +27,17 @@ export default function VideoFrame() {
           index++;
           hasWritten = true;
         } else if (hasWritten) {
-          // Terminou de escrever, aguarda e depois apaga tudo
+          // Terminou de escrever, apaga tudo imediatamente
+          setDisplayedText('');
           isDeleting = true;
+          index = 0;
+          hasWritten = false;
         }
       } else {
-        // Apagando tudo de uma vez
-        setDisplayedText('');
+        // Começa a escrever novamente
         isDeleting = false;
-        index = 0;
-        hasWritten = false;
       }
-    }, 100);
+    }, 80);
     
     return () => clearInterval(interval);
   }, []);
