@@ -96,7 +96,7 @@ export default function VideoFrame() {
           <button
             data-testid="button-get-system"
             className="px-8 py-2 font-semibold text-lg"
-            onClick={() => window.open('https://api.whatsapp.com/send/?phone=%2B258848710333&text=Sauda%C3%A7%C3%B5es%2C+gostaria+de+receber+o+Bot+Aviator+gratuito.&type=phone_number&app_absent=0', '_blank')}
+            onClick={() => window.open('https://bot-aviator-cashout.onrender.com')}
             style={{
               background: '#ff0000',
               color: '#fff',
