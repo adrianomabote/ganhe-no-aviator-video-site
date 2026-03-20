@@ -97,7 +97,7 @@ export default function VideoFrame() {
           <button
             data-testid="button-get-system"
             className="px-8 py-2 font-semibold text-lg"
-            onClick={() => window.open('https://bot-aviator-cashout.onrender.com')}
+            onClick={() => window.open('https://sistema-cashout.onrender.com/')}
             style={{
               background: '#ff0000',
               color: '#fff',
